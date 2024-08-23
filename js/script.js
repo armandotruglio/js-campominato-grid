@@ -15,6 +15,8 @@ form.addEventListener('submit', function(event){
     
         const content = createNode('div', 'square');
 
+        content.innerText = num;
+
         resultGrid.appendChild(content);
     }
 })
