@@ -1,0 +1,32 @@
+/* CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+}
+
+main{
+    background-color: #7fffd4;
+    padding: 50px 0;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.grid{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    border: 1px solid black;
+    flex-basis: calc(100%/10);
+}
