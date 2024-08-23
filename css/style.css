@@ -19,7 +19,7 @@ main{
     margin: 0 auto;
 }
 
-.grid{
+#grid{
     height: 500px;
     width: 500px;
     display: flex;
