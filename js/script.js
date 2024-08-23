@@ -14,8 +14,13 @@ form.addEventListener('submit', function(event){
         num = i + 1;
     
         const content = createNode('div', 'square');
-
+    
         content.innerText = num;
+
+        content.addEventListener('click', function(){
+            console.log(content.innerText);
+            content.classList.add('clicked');
+        })
 
         resultGrid.appendChild(content);
     }
