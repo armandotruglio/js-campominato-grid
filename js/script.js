@@ -2,13 +2,16 @@
 
 const resultGrid = document.getElementById('grid');
 const playButton = document.querySelector('button');
+const resultMode = document.getElementById('mode');
 const form = document.querySelector('form');
-const squareNumber = 100;
 
 //Faccio un ciclo for per creare la griglia
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
+
+    const squareNumber = resultMode.value;
+    console.log(squareNumber);
     
     for(let i = 0; i < squareNumber; i++){
         num = i + 1;
@@ -21,6 +24,8 @@ form.addEventListener('submit', function(event){
             console.log(content.innerText);
             content.classList.add('clicked');
         })
+
+        content.classList.add('square-' + squareNumber);
 
         resultGrid.appendChild(content);
     }
