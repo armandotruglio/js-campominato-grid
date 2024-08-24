@@ -1,6 +1,6 @@
 function createNode(elementType, className){
-    const element = document.createElement(elementType);
-    element.className = className;
+    const node = document.createElement(elementType);
+    node.className = className;
 
-    return element;
+    return node;
 }

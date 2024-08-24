@@ -1,4 +1,4 @@
-/* CSS RESET*/
+/* CSS RESET */
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +6,7 @@
     font-family: sans-serif;
 }
 
+/* Generics */
 header{
     height: 100px;
     padding: 2rem;
@@ -23,11 +24,13 @@ button{
     padding: 0 2rem;
 }
 
+/* Utils */
 .container{
     width: 800px;
     margin: 0 auto;
 }
 
+/* Grid */
 #grid{
     height: 500px;
     width: 500px;
@@ -35,6 +38,7 @@ button{
     flex-wrap: wrap;
 }
 
+/* Squares*/
 .square{
     border: 1px solid black;
     display: flex;
